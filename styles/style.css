@@ -27,3 +27,149 @@
     text-decoration: none;
     color:white;
 }
+
+.sub-title {
+    /* font-size: 30px; */
+    line-height: 40px;
+    color: #868e96!important;
+}
+
+.page-header{
+    font-size: 60px;
+    line-height: 1.1;
+    color: #000!important;
+}
+
+.wave-emoji {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.social-media-div {
+    font-size: 2em;
+}
+
+.icon-button {
+    margin-bottom: 10px;
+}
+
+.social-media-div {
+    font-size: 2em;
+}
+
+.github i{
+    background-color: #000;
+}
+.linkedin i {
+    background-color: #0e76a8;
+}
+.google i {
+    background-color: #ea4335;
+}
+.facebook i {
+    background-color: #3b5998;
+}
+.stack-overflow i {
+    background-color: #f48024;
+}
+.gitlab i {
+    background-color: #fca326;
+}
+.medium i {
+    background-color: #000;
+}
+
+.facebook i:hover, .github i:hover, .gitlab i:hover, .google i:hover, .instagram i:hover, .kaggle i:hover, .linkedin i:hover, .medium i:hover, .stack-overflow i:hover, .twitter i:hover {
+    background-color: #000;
+}
+
+.icon-button i {
+    color: #fff;
+    border-radius: 2.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 2.6rem;
+    margin: 0 5px 10px;
+    transition: .2s ease-in;
+}
+
+.education-roundedimg {
+    object-fit: cover;
+    margin-right: 2rem;
+    width: 6rem;
+    height: 6rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%);
+    border-radius: 50%;
+}
+
+.education-card-right {
+    max-width: 70%;
+}
+
+.education-text-school {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 35px;
+}
+
+.education-text-subHeader {
+    color: #000;
+    font-weight: 700;
+    font-size: 19px;
+    margin: 0;
+    padding-top: 0.8rem;
+    line-height: normal;
+}
+
+.education-text-duration {
+    color: #000;
+    font-size: 19px;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+.education-text-desc {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-card-border {
+    height: 30px;
+    width: 80%;
+    border-top: 2px solid hsla(0,0%,82.7%,.397);
+    margin-bottom: 20px;
+    transition: width .6s ease-in-out;
+}
+
+.education-hr{
+    border-top: 2px solid #3e3d3d66;
+}
+
+.education-hr:hover{
+    border-top: 2px solid rgb(161, 187, 226);
+}
