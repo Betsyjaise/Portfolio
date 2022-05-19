@@ -18,3 +18,12 @@
     padding:2em;
     margin:-1em
 }
+
+.experience{
+    text-align: right;
+}
+
+.experience a{
+    text-decoration: none;
+    color:white;
+}
