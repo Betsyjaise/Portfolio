@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>─────────────💻</title>
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="icon" href="images/favicon.ico">
@@ -179,7 +179,7 @@
                 <div class="col-md-4 text-center">
                     <i class="fas fa-database fa-5x text-danger mb-4"></i>
                     <h1 class="text-white mb-3"> Databases</h1>
-                    <p class="text-muted"> MySQL</p>
+                    <p class="text-muted"> MySQL, Dynamo DB</p>
                 </div>
             </div>
         </div>
@@ -190,7 +190,7 @@
             <h1 class="text-center text-dark headerWeight">Contact Me</h1>
             <div class="row">
                 <div class="col-md-12">
-                    <form id="submit" action="">
+                    <form id="submit-form" action="">
                         <div class="form-group">
                             <label for="exampleInputName">Name</label>
                             <input type="text" name="Name" class="form-control" id="exampleInputName"
@@ -240,19 +240,20 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script>
-        $("#submit").submit((e) => {
+        $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbxFK9iWnuRgZhKa-DitidQ-_v85WfjQn_jGsGSl/exec",
-                data: $("#submit").serialize(),
-                method: "POST",
+                url: "https://script.google.com/macros/s/AKfycbyDHV_TBxnLokVw0KfvoUNAV9rB79e-dmPmbxORJUSSqQDGJ0KMxit94J5CNeizK11zhQ/exec",
+                data: $("#submit-form").serialize(),
+                method: "post",
                 success: function (response) {
-                    alert("Form submitted successfully")
+                    alert("Enquiry form submitted.")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
                 error: function (err) {
                     alert("Something Error")
+
                 }
             })
         })
