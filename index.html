@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>─────────────💻</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="icon" href="images/favicon.ico">
@@ -243,11 +244,12 @@
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
+                headers: { 'Access-Control-Allow-Origin': 'http://www.eldhothampi.com' },
                 url: "https://script.google.com/macros/s/AKfycbyDHV_TBxnLokVw0KfvoUNAV9rB79e-dmPmbxORJUSSqQDGJ0KMxit94J5CNeizK11zhQ/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
                 success: function (response) {
-                    alert("Enquiry form submitted.")
+                    alert("Form submitted successfully")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
@@ -258,7 +260,6 @@
             })
         })
     </script>
-
 </body>
 
 </html>
