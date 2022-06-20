@@ -191,7 +191,8 @@
             <h1 class="text-center text-dark headerWeight">Contact Me</h1>
             <div class="row">
                 <div class="col-md-12">
-                    <form id="submit-form" action="">
+                    <form id="submit-form" method="POST"
+                        action="https://script.google.com/macros/s/AKfycbxyQb8nQ7Y47gEy6DQrH5EIxQAdDhzs5iVIxmpn2tlEMOkLYEJce5_7ECmjEuVOFhG3/exec">
                         <div class="form-group">
                             <label for="exampleInputName">Name</label>
                             <input type="text" name="Name" class="form-control" id="exampleInputName"
@@ -240,12 +241,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script>
+    <!-- <script>
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                headers: { 'Access-Control-Allow-Origin': '*' },
-                url: "https://script.google.com/macros/s/AKfycbyDHV_TBxnLokVw0KfvoUNAV9rB79e-dmPmbxORJUSSqQDGJ0KMxit94J5CNeizK11zhQ/exec",
+                url: "https://script.google.com/macros/s/AKfycbxyQb8nQ7Y47gEy6DQrH5EIxQAdDhzs5iVIxmpn2tlEMOkLYEJce5_7ECmjEuVOFhG3/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
                 success: function (response) {
@@ -259,7 +259,7 @@
                 }
             })
         })
-    </script>
+    </script> -->
 </body>
 
 </html>
