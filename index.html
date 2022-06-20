@@ -244,7 +244,7 @@
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                headers: { 'Access-Control-Allow-Origin': 'http://www.eldhothampi.com' },
+                headers: { 'Access-Control-Allow-Origin': '*' },
                 url: "https://script.google.com/macros/s/AKfycbyDHV_TBxnLokVw0KfvoUNAV9rB79e-dmPmbxORJUSSqQDGJ0KMxit94J5CNeizK11zhQ/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
