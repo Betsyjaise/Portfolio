@@ -242,17 +242,17 @@
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbz15xDegE3lP50eEJsD50sFOIEPvSseII3ST075xO4wxxcIICYygidp9brQdQoNhGDugg/exec",
+                url: "https://script.google.com/macros/s/AKfycbw7g6Q9RR_ZLc1CqZHmlCN3_i_PYVgNS7qR1Dju-lZP3dfxLqSS-hCE8GY790emPqVXRA/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
                 crossDomain: true,
                 success: function (response) {
-                    alert("Form submitted successfully")
+                    alert("Inquiry Submitted. Thank You!")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
                 error: function (err) {
-                    alert("Something Error",err)
+                    alert("Error while submitting Inquiry. Sorry!")
 
                 }
             })
